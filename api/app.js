@@ -7,3 +7,6 @@ const bodyParser = require('body-parser');
 
 // Load in the mongoose models
 const { Task } = require('./database/models');
+
+// Load middleware
+app.use(bodyParser.json());

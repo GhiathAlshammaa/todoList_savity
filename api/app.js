@@ -39,3 +39,26 @@ app.get('/list', (req, res) => {
         res.send(e);
     })
 });
+
+/** 
+ * POST /list
+ * Purpose: Create a task
+*/
+app.post('/list', (req, res) => {
+    // We want to create a new task and return the new task document back to the user (which includes the id)
+    // The task info (fields) will be passed in via the JSON request body
+    let title = req.body.title;
+    let status = false;
+    let newTask = new Task({
+        title,
+        status
+    });
+    newTask = new Task({
+        title,
+        status
+    });
+    newTask.save().then((taskDoc) => {
+        // the full task document is returned (incl. id)
+        res.send(taskDoc);
+    })
+});

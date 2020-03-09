@@ -26,3 +26,16 @@ app.use(function (req, res, next) {
 
 /* ROUTE HANDLERS
    LIST ROUTES */
+
+/** 
+ * GET /list
+ * Purpose: Get all list
+*/
+app.get('/list', (req, res) => {
+    // We want to return an array of all the list in the database
+    Task.find({}).then((tasks) => {
+        res.send(tasks);
+    }).catch((e) => {
+        res.send(e);
+    })
+});

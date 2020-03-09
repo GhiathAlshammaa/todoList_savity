@@ -90,3 +90,7 @@ app.delete('/list/:id', (req, res) => {
         res.send(removeListDoc);
     })
 })
+
+app.listen(3000, () => {
+    console.log("Server is Listing on Port 3000");
+})

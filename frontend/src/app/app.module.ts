@@ -15,7 +15,8 @@ import { MatInputModule } from "@angular/material/input";
 import { MatListModule } from "@angular/material/list";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatIconModule } from "@angular/material/icon";
-import { TodoListComponent } from './todo-list/todo-list.component';
+import { TodoListComponent } from "./todo-list/todo-list.component";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [AppComponent, TodoListComponent],
@@ -30,7 +31,8 @@ import { TodoListComponent } from './todo-list/todo-list.component';
     MatInputModule,
     MatFormFieldModule,
     MatListModule,
-    MatIconModule
+    MatIconModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

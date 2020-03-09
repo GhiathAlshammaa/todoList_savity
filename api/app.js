@@ -69,10 +69,11 @@ app.post('/list', (req, res) => {
 */
 app.patch('/list/:id', (req, res) => {
     // we want to update the specified task (task document with id in the URL) with the new values specified in the JSON body of the request
-    Task.findOneAndUpdate({ _id: req.params.id }, { $set: { status: req.body.task.status } }, { new: true }, function (err, obj) {
+    Task.findOneAndUpdate({ _id: req.params.id }, { $set: req.body }, { new: true }, function (err, obj) {
         if (err) {
             console.log("Something wrong when updating data!");
         }
+        console.log(obj);
     }).then(() => {
         res.send({ message: 'Updated successfully.' });
     });

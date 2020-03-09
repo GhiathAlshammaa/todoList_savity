@@ -3,7 +3,7 @@ This's a project as TodoList, it helps people to organize their day, and do more
 # The Design, it's a different than other similar projects, where it's three section.
 * AddTodo Section: where the User can Enter the task's title.
 * ToDoList Section: where exist the incomplete tasks.
-*Completed Section: where exist the complete tasks.
+* Completed Section: where exist the complete tasks.
 
 # The main Technologies, which I used, that is simply a Mean stack:
 * MangoDb : Database

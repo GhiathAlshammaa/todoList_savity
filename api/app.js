@@ -23,3 +23,6 @@ app.use(function (req, res, next) {
         next();
     }
 });
+
+/* ROUTE HANDLERS
+   LIST ROUTES */

@@ -15,9 +15,10 @@ import { MatInputModule } from "@angular/material/input";
 import { MatListModule } from "@angular/material/list";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatIconModule } from "@angular/material/icon";
+import { TodoListComponent } from './todo-list/todo-list.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, TodoListComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

@@ -1,0 +1,19 @@
+{
+  "name": "todolist_savity",
+  "version": "1.0.0",
+  "description": "Todo List Project by Mean Stack Technology",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ghiath2017/todoList_savity.git"
+  },
+  "author": "Ghiath Alshammaa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ghiath2017/todoList_savity/issues"
+  },
+  "homepage": "https://github.com/Ghiath2017/todoList_savity#readme"
+}

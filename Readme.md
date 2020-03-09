@@ -10,7 +10,7 @@ This's a project as TodoList, it helps people to organize their day, and do more
 * Node.js: Backend
 * Angular 8: Frontend
 
-# some other libraries, which I used too
+# Some other libraries, which I used too
 * mongoose.js
 * express.js
 * Angular Material

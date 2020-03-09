@@ -77,3 +77,16 @@ app.patch('/list/:id', (req, res) => {
         res.send({ message: 'Updated successfully.' });
     });
 });
+
+/** 
+ * DELETE /list/:id
+ * Purpose: Delete a task
+*/
+app.delete('/list/:id', (req, res) => {
+    // we want to delete the specified task (document with id in the URL)
+    Task.findByIdAndDelete({
+        _id: req.params.id
+    }).then((removeListDoc) => {
+        res.send(removeListDoc);
+    })
+})

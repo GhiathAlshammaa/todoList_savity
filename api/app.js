@@ -62,3 +62,18 @@ app.post('/list', (req, res) => {
         res.send(taskDoc);
     })
 });
+
+/** 
+ * PATCH /list/:id
+ * Purpose: Update a speified task
+*/
+app.patch('/list/:id', (req, res) => {
+    // we want to update the specified task (task document with id in the URL) with the new values specified in the JSON body of the request
+    Task.findOneAndUpdate({ _id: req.params.id }, { $set: { status: req.body.task.status } }, { new: true }, function (err, obj) {
+        if (err) {
+            console.log("Something wrong when updating data!");
+        }
+    }).then(() => {
+        res.send({ message: 'Updated successfully.' });
+    });
+});

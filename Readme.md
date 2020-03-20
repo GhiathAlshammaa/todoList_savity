@@ -27,7 +27,7 @@ There're two main folders :
 
 * Frontend :
 1) npm install (to install all dependencies)
-2) ng serve -o (to run the USer Interface)
+2) ng serve -o (to run the User Interface)
 
 The project should to open automatically, if not, just open localhost:4200 port
 
